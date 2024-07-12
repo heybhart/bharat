@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(194, 217, 238);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    height: auto;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    border-radius: 10px;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.form-wrapper img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form-wrapper #line-1 {
+    font-weight: 200;
+    font-size: 2.2rem;
+    margin-left: 10%;
+    margin-top: -20px;
+}
+
+.form-wrapper p {
+    margin-left: 10%;
+    color: rgb(93, 122, 190);
+}
+
+.form-wrapper #line-2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.passenger-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 10%;
+    height: auto;
+    width: 85%;
+    padding: 10px;
+}
+
+.passenger-name input {
+    height: 40px;
+    flex: 1;
+    min-width: 150px;
+    max-width: 210px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+}
+
+.passenger-name input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.date-of-birth {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    margin-left: 10%;
+    width: 85%;
+    padding: 10px;
+}
+
+.date-of-birth h3 {
+    margin-top: 1%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.dob-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dob-details select {
+    height: 40px;
+    flex: 1;
+    min-width: 100px;
+    max-width: 210px;
+    border-radius: 5px;
+    border: 1px solid rgb(189, 181, 181);
+}
+
+.dob-details select:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.e-mail {
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.e-mail h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.e-mail input {
+    height: 40px;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.e-mail input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.phone {
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.phone h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.phone input {
+    height: 40px;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.phone input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.address {
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.address h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.address textarea {
+    height: 80px;
+    width: 100%;
+    max-width: 610px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-left: 2%;
+    margin-top: 5px;
+    resize: none; /* Prevents resizing */
+}
+
+.address textarea:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.city-state {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 7.5%;
+    width: 85%;
+    padding: 10px;
+}
+
+.city-state input {
+    height: 40px;
+    flex: 1;
+    max-width: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+}
+
+.city-state input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.pincode-country {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 7.5%;
+    width: 85%;
+    padding: 10px;
+}
+
+.pincode-country input {
+    height: 40px;
+    flex: 1;
+    max-width: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+}
+
+.pincode-country input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.departing-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px;
+}
+
+.departing-country, .departing-city {
+    flex: 1;
+}
+
+.departing-country h3, .departing-city h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.departing-country select, .departing-city input {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.departing-country select:hover, .departing-city input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.destination-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px;
+}
+
+.destination-country, .destination-city {
+    flex: 1;
+}
+
+.destination-country h3, .destination-city h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.destination-country select, .destination-city input {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.destination-country select:hover, .destination-city input:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.airline-fare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    width: 80%;
+    padding: 10px;
+}
+
+.airline-fare h3 {
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.airline-fare select {
+    height: 40px;
+    width: 45%; 
+    max-width: 300px; 
+    border-radius: 6px;
+    border: 1px solid rgb(189, 181, 181);
+    padding-left: 15px;
+    margin-left: 2%;
+}
+
+.airline-fare select:hover {
+    border-color: blue;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.submit-button
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    
+}
+.submit-button input
+{
+    height: 40px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: rgba(12, 242, 93, 0.971);
+    border-radius: 6px;
+    color: white;
+    border: none;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@media (max-width: 599px) {
+    .passenger-name,
+    .date-of-birth,
+    .city-state,
+    .pincode-country,
+    .departing-info {
+        width: 95%;
+        margin-left: 2.5%;
+        padding: 5px;
+    }
+
+    .passenger-name input,
+    .dob-details select,
+    .city-state input,
+    .pincode-country input,
+    .departing-country select,
+    .departing-city input {
+        max-width: 100%;
+    }
+
+    .e-mail,
+    .phone,
+    .address {
+        width: 92%;
+        margin-left: 2.5%;
+    }
+
+    .e-mail input,
+    .phone input,
+    .address textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+
+    .destination-country,
+    .destination-city {
+        flex: 1; 
+        max-width: 100%; 
+    }
+
+    .destination-country h3,
+    .destination-city h3 {
+        margin-left: 0; 
+    }
+
+    .destination-country select,
+    .destination-city input {
+        width: 100%; 
+        max-width: 100%; 
+    }
+    .airline-fare {
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-left: 2.5%;
+        width: 95%;
+        padding: 5px;
+    }
+
+    .airline-fare h3 {
+        margin-left: 0; 
+        margin-bottom: 5px; 
+    }
+
+    .airline-fare select {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0; 
+    }
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}

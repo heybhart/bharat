@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.explore-page {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.header {
+    transition: all 0.5s;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#title {
+    font-size: 30px;
+    color: white;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.header nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.header nav a:hover::after {
+    left: 0;
+}
+
+/* Left side */
+.first-page-leftside {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2%;
+    padding: 20px;
+    color: white;
+}
+
+.first-page-leftside h1 {
+    font-size: 70px;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.first-page-leftside p {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 6%;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #FF9C07;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 4%;
+}
+
+.cta-button:hover {
+    background-color: #FFB408;
+}
+
+.first-page-rightside {
+    margin-top: 10%;  
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.first-page-rightside img {
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.first-page-rightside:hover img {
+    transform: scale(1.1);
+}
+
+/* =========================================== PAGE 2 =================================== */
+
+.page-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    height: 800px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.image-item {
+    position: relative;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tour-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+.tour-label {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tour-badge {
+    background-color: rgb(14, 115, 247);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ===================================  EXPLORE TOURS ====================================== */
+
+.explore-places {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+}
+
+.explore-places h1 {
+    font-size: 50px;   
+    color: white;
+    font-family: 'DM Sans';
+    font-weight: 700;
+}
+
+.explore-places b {
+    color: rgb(97, 173, 220);
+}
+
+.africa-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+}
+
+.africa-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.africa-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.africa-details {
+    flex: 1;
+    color: white;
+}
+
+.africa-details h2 {
+    margin-top: 5%;
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.africa-details h3, .africa-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.africa-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.africa-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.africa-price #from-tag {
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+    margin-top: 5%;
+}
+
+.africa-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+.dubai-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+}
+
+.dubai-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dubai-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dubai-details {
+    flex: 1;
+    color: white;
+}
+
+.dubai-details h2 {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dubai-details h3, .dubai-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.dubai-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.dubai-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.dubai-price #from-tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5%;
+}
+
+.dubai-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+.switzerland-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.switzerland-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.switzerland-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.switzerland-details {
+    flex: 1;
+    color: white;
+}
+
+.switzerland-details h2 
+{
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.switzerland-details h3, .switzerland-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.switzerland-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.switzerland-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.switzerland-price #from-tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5%;
+}
+
+.switzerland-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+
+.venice-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.venice-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.venice-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.venice-details {
+    flex: 1;
+    color: white;
+}
+
+.venice-details h2 {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.venice-details h3, .venice-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.venice-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.venice-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.venice-price #from-tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5%;
+}
+
+.venice-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+
+.america-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.america-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.america-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.america-details {
+    flex: 1;
+    color: white;
+}
+
+.america-details h2 {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.america-details h3, .america-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.america-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.america-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.america-price #from-tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5%;
+}
+
+.america-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+
+.japan-tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    gap: 20px;
+}
+
+.japan-image {
+    flex: 0 0 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.japan-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.japan-details {
+    flex: 1;
+    color: white;
+}
+
+.japan-details h2 {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    background: linear-gradient(25deg, #FFB408, #FF9C07, #F25817, #3D0B02);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.japan-details h3, .america-details h4 {
+    font-size: 15px;
+    color: grey;
+    margin-top: 5%;
+}
+
+.japan-details p {
+    color: grey;
+    font-family: 'DM Sans';
+    margin-top: 5%;
+}
+
+.japan-price {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.japan-price #from-tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+    margin-top: 5%;
+}
+
+.japan-price #price-tag {
+    font-size: 35px;
+    font-weight: 700;
+    color: grey;
+    margin-top: 10%;
+}
+
+
+#fullstar1, #fullstar2, #fullstar3, #halfstar, #blankstar {
+    color: gold;
+    font-size: 13px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 899px) {
+    .header {
+        padding: 0 10px;
+    }
+    .explore-page {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-page-leftside {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .first-page-leftside h1 {
+        font-size: 50px;
+    }
+    .first-page-leftside p {
+        font-size: 18px;
+    }
+    .first-page-rightside {
+        margin-left: 10%;
+        height: 400px;
+        background-color: #FFFFFF;
+        width: 80%;
+        margin-top: 5%;
+    }
+    .first-page-rightside img {
+        width: 100%;
+        height: 400px;
+    }
+    .image-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .page-2{
+        height: auto;
+        
+    }
+}
+
+@media (max-width: 599px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    #title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header nav a {
+        margin: 5px;
+    }
+    .first-page-leftside {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    .first-page-leftside h1 {
+        font-size: 40px;
+    }
+    .first-page-leftside p {
+        font-size: 16px;
+    }
+    .first-page-rightside {
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .first-page-rightside img {
+        width: 100%;
+    }
+    .image-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .explore-places {
+        padding: 10px;
+    }
+    .explore-places h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .africa-tour, .dubai-tour, .switzerland-tour {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+    .africa-image, .dubai-image, .switzerland-image {
+        width: 100%;
+        height: auto;
+    }
+    .africa-image, .dubai-image, .switzerland-image img {
+        width: 100%;
+        height: auto;
+    }
+    .africa-details, .dubai-details, .switzerland-details {
+        text-align: center;
+    }
+    .africa-price, .dubai-price, .switzerland-price {
+        width: 100%;
+    }
+    .africa-price, .dubai-price, .switzerland-price p
+    {
+        font-size: 20px;
+        color: grey;
+    }
+    .africa-price, .dubai-price, .switzerland-price #price-tag
+       {
+        margin-top: 2%;
+        font-size: 32px;
+        color: grey;
+    }
+    .explore-places {
+        margin-top: 10%;
+    }
+}
