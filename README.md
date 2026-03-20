@@ -14,8 +14,9 @@ A full-stack travel booking web application where users can explore destinations
 
 ## 🖥️ Live Demo
 
-> Frontend hosted on GitHub Pages / Backend live on Render:
-> **Backend API:** `https://flight-backend-bjlj.onrender.com`
+🔗 **[https://pankaj3456.github.io/Bagpackers/](https://pankaj3456.github.io/Bagpackers/)**
+
+> Backend API: `https://flight-backend-bjlj.onrender.com`
 
 ---
 
